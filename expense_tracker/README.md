@@ -1,6 +1,19 @@
 # expense_tracker
 
 A new Flutter project.
+💰 Flutter Expense Tracker
+A simple yet powerful Flutter Expense Tracker app that helps users efficiently manage their daily expenses and track spending habits. Built using Flutter & Dart, this app features an intuitive UI, real-time expense tracking, and insightful analytics to help users stay on top of their finances.
+
+🚀 Features
+✅ Add, edit, and delete expenses
+✅ Categorize expenses (e.g., Food, Transport, Bills, etc.)
+✅ View expense history with a user-friendly interface
+✅ Interactive charts for financial insights
+
+🛠️ Tech Stack
+Flutter (Cross-platform mobile framework)
+
+Dart (Programming language)
 
 ## Getting Started
 
