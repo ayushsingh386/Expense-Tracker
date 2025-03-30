@@ -14,6 +14,7 @@ A simple yet powerful Flutter Expense Tracker app that helps users efficiently m
 ✅ Interactive charts for financial insights
 
 🛠️ Tech Stack
+
 Flutter (Cross-platform mobile framework)
 
 Dart (Programming language)
