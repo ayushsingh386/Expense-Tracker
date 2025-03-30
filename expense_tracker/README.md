@@ -6,8 +6,11 @@ A simple yet powerful Flutter Expense Tracker app that helps users efficiently m
 
 🚀 Features
 ✅ Add, edit, and delete expenses
+
 ✅ Categorize expenses (e.g., Food, Transport, Bills, etc.)
+
 ✅ View expense history with a user-friendly interface
+
 ✅ Interactive charts for financial insights
 
 🛠️ Tech Stack
