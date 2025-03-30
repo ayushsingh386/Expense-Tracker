@@ -242,4 +242,14 @@ class _CategoryFormState extends State<CategoryForm> {
     );
   }
 }
+extension ColorExtension on Color {
+  Color withValues({double? alpha, double? red, double? green, double? blue}) {
+    return Color.fromARGB(
+      (alpha ?? this.alpha).toInt(),
+      (red ?? this.red).toInt(),
+      (green ?? this.green).toInt(),
+      (blue ?? this.blue).toInt(),
+    );
+  }
+}
 

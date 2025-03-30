@@ -81,7 +81,7 @@ class ExpenseList extends StatelessWidget {
                   
                   // Amount
                   Text(
-                    NumberFormat.currency(symbol: '\$').format(expense.amount),
+                    NumberFormat.currency(symbol: 'INR ').format(expense.amount),
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
                       fontWeight: FontWeight.bold,
                     ),
@@ -92,6 +92,16 @@ class ExpenseList extends StatelessWidget {
           ),
         );
       },
+    );
+  }
+}
+extension ColorExtension on Color {
+  Color withValues({double? alpha, double? red, double? green, double? blue}) {
+    return Color.fromARGB(
+      (alpha ?? this.alpha).toInt(),
+      (red ?? this.red).toInt(),
+      (green ?? this.green).toInt(),
+      (blue ?? this.blue).toInt(),
     );
   }
 }

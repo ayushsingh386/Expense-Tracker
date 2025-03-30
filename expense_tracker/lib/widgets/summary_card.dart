@@ -1,6 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
+// Extension to add a custom withValues method to Color
+extension ColorExtension on Color {
+  Color withValues({double? alpha, double? red, double? green, double? blue}) {
+    return Color.fromARGB(
+      (alpha ?? this.alpha).toInt(),
+      (red ?? this.red).toInt(),
+      (green ?? this.green).toInt(),
+      (blue ?? this.blue).toInt(),
+    );
+  }
+}
+
 class SummaryCard extends StatelessWidget {
   final double totalAmount;
 
@@ -22,12 +34,12 @@ class SummaryCard extends StatelessWidget {
             Text(
               'Total Expenses',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                color: Theme.of(context).colorScheme.onPrimary.withValues(),
+                color: Theme.of(context).colorScheme.onPrimary.withValues(alpha: 128),
               ),
             ),
             const SizedBox(height: 8),
             Text(
-              NumberFormat.currency(symbol: '\$').format(totalAmount),
+              NumberFormat.currency(symbol: 'INR ').format(totalAmount),
               style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                 color: Theme.of(context).colorScheme.onPrimary,
                 fontWeight: FontWeight.bold,
@@ -38,7 +50,7 @@ class SummaryCard extends StatelessWidget {
               height: 4,
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.onPrimary.withValues(),
+                color: Theme.of(context).colorScheme.onPrimary.withValues(alpha: 128), // Example usage
                 borderRadius: BorderRadius.circular(2),
               ),
             ),
@@ -48,4 +60,3 @@ class SummaryCard extends StatelessWidget {
     );
   }
 }
-

@@ -75,7 +75,7 @@ class ExpenseChart extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      NumberFormat.currency(symbol: '\$').format(amount),
+                      NumberFormat.currency(symbol: 'INR ').format(amount),
                       style: Theme.of(context).textTheme.bodySmall?.copyWith(
                         fontWeight: FontWeight.bold,
                       ),

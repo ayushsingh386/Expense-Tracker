@@ -156,7 +156,7 @@ class _AddExpenseScreenState extends State<AddExpenseScreen> {
                   decoration: const InputDecoration(
                     labelText: 'Amount',
                     hintText: 'Enter amount',
-                    prefixIcon: Icon(Icons.attach_money),
+                    prefixIcon: Icon(Icons.money),
                   ),
                   keyboardType: const TextInputType.numberWithOptions(decimal: true),
                   inputFormatters: [

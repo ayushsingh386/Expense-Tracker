@@ -78,7 +78,7 @@ class ExpenseDetailScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        NumberFormat.currency(symbol: '\$').format(expense.amount),
+                        NumberFormat.currency(symbol: 'INR').format(expense.amount),
                         style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                           color: Theme.of(context).colorScheme.primary,
                           fontWeight: FontWeight.bold,

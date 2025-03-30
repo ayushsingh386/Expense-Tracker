@@ -37,7 +37,7 @@ class MyCategory {
       'iconCodePoint': icon.codePoint,
       'iconFontFamily': icon.fontFamily,
       'iconFontPackage': icon.fontPackage,
-      'colorValue': color.b,
+      'colorValue': color.blue,
     };
   }
 
